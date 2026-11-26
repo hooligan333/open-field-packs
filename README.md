@@ -13,6 +13,7 @@ Add-ons for the OP-1 Field on OS 1.7.3 with [open-field](https://github.com/LaP0
 | **tuning** | 8 | tool | Alternate tunings for the synth: maqam, gamelan, just and Pythagorean intonation, quarter tones, or your own from a Scala file. | [open-field-tuning](https://github.com/hooligan333/open-field-tuning) |
 | **vowel** | 5 | effect | A vowel filter in the unit's list of effects: three formants that move between vowels, with a drawn page. | [open-field-vowel](https://github.com/hooligan333/open-field-vowel) |
 | **meter** | 4 | tape and metronome | Meters other than 4/4: the metronome's accent, the count-in and the tape's bar lines, grid and jumps follow the meter. | [open-field-meter](https://github.com/hooligan333/open-field-meter) |
+| **endless midi** | 6 | sequencer | Record endless's steps from a MIDI keyboard at the pitches played, over its whole range, while shift is held. | [open-field-endless-midi](https://github.com/hooligan333/open-field-endless-midi) |
 | **pattern mode** | 1 | sequencer | The pattern sequencer keeps its play mode (backward, ping-pong or forward) over a restart. | [open-field-pattern-mode](https://github.com/hooligan333/open-field-pattern-mode) |
 
 To put one on a unit: tick it on open-field's install page once it is listed there, or copy its `.pack` file into the unit's `packs` folder in disk mode and restart. Each repository's README says what was tried on a unit and what was not.
@@ -67,6 +68,12 @@ Hold one key and it weaves the two interlocking parts of Balinese kotekan around
 
 *Kotekan's page (a photo of the unit's screen).*
 
+| Listen | What it is |
+| --- | --- |
+| [Four styles](docs/media/kotekan-01-four-styles.mp3) | One held line in nyog cag, norot, telu and empat |
+| [A pokok line woven](docs/media/kotekan-02-a-pokok-line-woven.mp3) | A longer line with the pokok struck too: telu, then empat |
+| [Five rates](docs/media/kotekan-03-five-rates.mp3) | The same line at 2, 3, 4, 6 and 8 steps a beat |
+
 ## tuning
 
 Alternate tunings for the synth: maqam, gamelan, just and Pythagorean intonation, quarter tones, or your own from a Scala file. [Repository and guide](https://github.com/hooligan333/open-field-tuning).
@@ -103,6 +110,14 @@ Meters other than 4/4: the metronome's accent, the count-in and the tape's bar l
 ![meter's page: 7/8](docs/media/meter-7-8.jpg)
 
 *Meter's page: 7/8 (a photo of the unit's screen).*
+
+## endless midi
+
+Record endless's steps from a MIDI keyboard at the pitches played, over its whole range, while shift is held. [Repository and guide](https://github.com/hooligan333/open-field-endless-midi).
+
+![endless's screen after eight notes came in over MIDI](docs/media/endless-count-8.jpg)
+
+*Endless's screen after eight notes came in over MIDI (a photo of the unit's screen).*
 
 The recordings were played over MIDI by a script and recorded from the unit's own USB audio; only the level was changed.
 
