@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>open-field packs by hooligan333</title>
+<meta name="description" content="Add-ons for the OP-1 Field on OS 1.7.3 with open-field: synth engines, sequencers, tunings, an effect. With screenshots and recordings.">
+<style>
+:root { --bg: #f4f2ee; --ink: #1c1d1f; --soft: #5d6066; --card: #ffffff; --line: #dcd8d0; --acc: #c2410c; --shot: #0c0d0e; }
+@media (prefers-color-scheme: dark) { :root { --bg: #111214; --ink: #ecebe8; --soft: #9a9da3; --card: #1a1b1e; --line: #2c2e33; --acc: #fb923c; --shot: #000; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main, .top { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+.top { padding-top: 44px; padding-bottom: 8px; }
+h1 { font-size: clamp(1.7rem, 4.5vw, 2.5rem); line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.02em; }
+.top p { max-width: 62ch; color: var(--soft); margin: 0 0 10px; }
+.top p a, .foot a { color: var(--ink); }
+nav { display: flex; flex-wrap: wrap; gap: 6px 8px; margin: 18px 0 6px; }
+nav a { font: 13px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; text-decoration: none; color: var(--ink); border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; background: var(--card); }
+nav a:hover { border-color: var(--acc); color: var(--acc); }
+main { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); padding-top: 18px; padding-bottom: 48px; }
+.pack { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.pack header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+h2 { margin: 0; font-size: 1.35rem; letter-spacing: -0.01em; }
+.meta { margin: 0; color: var(--soft); font: 12.5px/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+figure { margin: 0; }
+figure img { display: block; width: 100%; height: auto; border-radius: 8px; background: var(--shot); }
+figcaption { color: var(--soft); font-size: 12.5px; margin-top: 6px; }
+.line { margin: 0; }
+.listen { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.listen li { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 6px; }
+.listen .t { display: grid; gap: 1px; }
+.listen .t span { color: var(--soft); font-size: 13.5px; }
+audio { width: 100%; height: 36px; }
+.links { margin: auto 0 0; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14.5px; padding-top: 4px; }
+.links a { color: var(--acc); text-underline-offset: 3px; }
+.foot { max-width: 1040px; margin: 0 auto; padding: 0 16px 56px; color: var(--soft); font-size: 13.5px; }
+.foot p { max-width: 70ch; margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<div class="top">
+<h1>open-field packs by hooligan333</h1>
+<p>Add-ons for the OP-1 Field on OS 1.7.3 with <a href="https://github.com/LaP0573/open-field">open-field</a>. Each pack is one file; its repository holds the source, a guide, and what was tried on a unit.</p>
+<p>To put one on a unit: tick it on open-field's install page once it is listed there, or copy the pack file into the unit's <code>packs</code> folder in disk mode and restart.</p>
+<nav><a href="#oud">oud</a> <a href="#maqam">maqam</a> <a href="#gangsa">gangsa</a> <a href="#kotekan">kotekan</a> <a href="#tuning">tuning</a> <a href="#vowel">vowel</a> <a href="#meter">meter</a> <a href="#pattern-mode">pattern mode</a></nav>
+</div>
+<main>
+<article class="pack" id="oud">
+<header><h2>oud</h2><p class="meta">synth engine &middot; version 6</p></header>
+<figure><img src="media/oud-double-course.jpg" alt="oud&#x27;s page: a double course" width="872" height="424" loading="lazy"><figcaption>Oud&#x27;s page: a double course, photographed on the unit</figcaption></figure>
+<p class="line">Plucked strings in courses: oud, saz, qanun, kora, harp, bouzouki and lute, with eight sounds and a drawn page.</p>
+<ul class="listen">
+<li><div class="t"><strong>A taqsim in rast</strong><span>Solo oud in free time; the tuning pack on maqam / rast</span></div><audio controls preload="none" src="media/oud-01-taqsim-in-rast.mp3"></audio></li>
+<li><div class="t"><strong>The eight sounds</strong><span>One phrase on oud, oud dark, lute, kora, harp, bouzouki, saz and qanun</span></div><audio controls preload="none" src="media/oud-02-the-eight-sounds.mp3"></audio></li>
+<li><div class="t"><strong>Three parts in hijaz</strong><span>Oud dark, harp and bouzouki, played one at a time and layered</span></div><audio controls preload="none" src="media/oud-03-three-parts-in-hijaz.mp3"></audio></li>
+</ul>
+<p class="links"><a href="https://github.com/hooligan333/open-field-oud-maqam">Repository, guide and source</a><a href="https://github.com/hooligan333/open-field-oud-maqam/raw/main/oud.pack">The pack file</a></p>
+</article>
+<article class="pack" id="maqam">
+<header><h2>maqam</h2><p class="meta">sequencer &middot; version 3</p></header>
+<figure><img src="media/maqam-rast.jpg" alt="maqam&#x27;s page: rast on C" width="872" height="424" loading="lazy"><figcaption>Maqam&#x27;s page: rast on C, photographed on the unit</figcaption></figure>
+<p class="line">Tunes as you play: each key sounds a maqam&#x27;s own pitch, quarter tones and all, with slides and trills.</p>
+<ul class="listen">
+<li><div class="t"><strong>Rast with ornaments</strong><span>One phrase four times: ornament off, slide, trill, both</span></div><audio controls preload="none" src="media/maqam-01-rast-ornament-off-slide-trill-both.mp3"></audio></li>
+<li><div class="t"><strong>Flavour</strong><span>The phrase at flavour 0 (equal), 64 (24-tone) and 127 (fine)</span></div><audio controls preload="none" src="media/maqam-02-rast-at-flavour-0-64-127.mp3"></audio></li>
+<li><div class="t"><strong>Three maqamat</strong><span>Rast, bayati and saba on C</span></div><audio controls preload="none" src="media/maqam-03-rast-bayati-saba-on-c.mp3"></audio></li>
+</ul>
+<p class="links"><a href="https://github.com/hooligan333/open-field-oud-maqam">Repository, guide and source</a><a href="https://github.com/hooligan333/open-field-oud-maqam/raw/main/maqam.pack">The pack file</a></p>
+</article>
+<article class="pack" id="gangsa">
+<header><h2>gangsa</h2><p class="meta">synth engine &middot; version 6</p></header>
+<figure><img src="media/gangsa-saron.jpg" alt="gangsa&#x27;s page: the sound saron" width="872" height="424" loading="lazy"><figcaption>Gangsa&#x27;s page: the sound saron, photographed on the unit</figcaption></figure>
+<p class="line">Struck metal and wood: gamelan bars and gongs, mbira, bells and bowls, with ten sounds and a drawn page.</p>
+<ul class="listen">
+<li><div class="t"><strong>The ten sounds</strong><span>Gambang, mbira, saron, bonang, pair, gender, kempul, bell, bowl, gong</span></div><audio controls preload="none" src="media/gangsa-01-the-ten-sounds.mp3"></audio></li>
+<li><div class="t"><strong>Gamelan in slendro</strong><span>Saron, bonang, gender, kempul and gong, layered; the tuning pack on gamelan / slendro</span></div><audio controls preload="none" src="media/gangsa-02-gamelan-in-slendro.mp3"></audio></li>
+<li><div class="t"><strong>Gong, bowl and bell in pelog</strong><span>Slow layers; the tuning pack on gamelan / pelog</span></div><audio controls preload="none" src="media/gangsa-03-gong-bowl-bell-in-pelog.mp3"></audio></li>
+</ul>
+<p class="links"><a href="https://github.com/hooligan333/open-field-gangsa-kotekan">Repository, guide and source</a><a href="https://github.com/hooligan333/open-field-gangsa-kotekan/raw/main/gangsa.pack">The pack file</a></p>
+</article>
+<article class="pack" id="kotekan">
+<header><h2>kotekan</h2><p class="meta">sequencer &middot; version 3</p></header>
+<figure><img src="media/kotekan-page.jpg" alt="kotekan&#x27;s page" width="872" height="424" loading="lazy"><figcaption>Kotekan&#x27;s page, photographed on the unit</figcaption></figure>
+<p class="line">Hold one key and it weaves the two interlocking parts of Balinese kotekan around it, in four styles.</p>
+<p class="links"><a href="https://github.com/hooligan333/open-field-gangsa-kotekan">Repository, guide and source</a><a href="https://github.com/hooligan333/open-field-gangsa-kotekan/raw/main/kotekan.pack">The pack file</a></p>
+</article>
+<article class="pack" id="tuning">
+<header><h2>tuning</h2><p class="meta">tool &middot; version 8</p></header>
+<figure><img src="media/tuning-gamelan-slendro.jpg" alt="tuning&#x27;s page: gamelan / slendro" width="872" height="424" loading="lazy"><figcaption>Tuning&#x27;s page: gamelan / slendro, photographed on the unit</figcaption></figure>
+<p class="line">Alternate tunings for the synth: maqam, gamelan, just and Pythagorean intonation, quarter tones, or your own from a Scala file.</p>
+<ul class="listen">
+<li><div class="t"><strong>One phrase in five tunings</strong><span>12 equal, maqam / rast, maqam / bayati, gamelan / slendro, gamelan / pelog</span></div><audio controls preload="none" src="media/tuning-01-one-phrase-in-five-tunings.mp3"></audio></li>
+<li><div class="t"><strong>Chords, equal then just</strong><span>C, F, G, C held in 12 equal, then in pure / just</span></div><audio controls preload="none" src="media/tuning-02-chords-in-12-equal-then-just.mp3"></audio></li>
+<li><div class="t"><strong>Quarter tones</strong><span>The keys from C4 up in 12 equal, then in 24 equal, then a tune</span></div><audio controls preload="none" src="media/tuning-03-the-keys-in-12-equal-then-24-equal.mp3"></audio></li>
+</ul>
+<p class="links"><a href="https://github.com/hooligan333/open-field-tuning">Repository, guide and source</a><a href="https://github.com/hooligan333/open-field-tuning/raw/main/tuning.pack">The pack file</a></p>
+</article>
+<article class="pack" id="vowel">
+<header><h2>vowel</h2><p class="meta">effect &middot; version 5</p></header>
+<figure><img src="media/vowel-a.jpg" alt="vowel&#x27;s page: the vowel a" width="872" height="424" loading="lazy"><figcaption>Vowel&#x27;s page: the vowel a, photographed on the unit</figcaption></figure>
+<p class="line">A vowel filter in the unit&#x27;s list of effects: three formants that move between vowels, with a drawn page.</p>
+<ul class="listen">
+<li><div class="t"><strong>a e i o u and back</strong><span>One chord held while the vowel knob travels</span></div><audio controls preload="none" src="media/vowel-01-a-e-i-o-u-and-back.mp3"></audio></li>
+<li><div class="t"><strong>Shift</strong><span>The formants moved an octave down and up</span></div><audio controls preload="none" src="media/vowel-02-shift-down-and-up.mp3"></audio></li>
+<li><div class="t"><strong>Bass line</strong><span>Motion following the envelope</span></div><audio controls preload="none" src="media/vowel-03-bass-line-with-envelope-motion.mp3"></audio></li>
+<li><div class="t"><strong>Chords in time</strong><span>Motion at 1/4, then 1/8</span></div><audio controls preload="none" src="media/vowel-04-chords-with-motion-in-time.mp3"></audio></li>
+</ul>
+<p class="links"><a href="https://github.com/hooligan333/open-field-vowel">Repository, guide and source</a><a href="https://github.com/hooligan333/open-field-vowel/raw/main/vowel.pack">The pack file</a></p>
+</article>
+<article class="pack" id="meter">
+<header><h2>meter</h2><p class="meta">tape and metronome &middot; version 4</p></header>
+<figure><img src="media/meter-7-8.jpg" alt="meter&#x27;s page: 7/8" width="872" height="424" loading="lazy"><figcaption>Meter&#x27;s page: 7/8, photographed on the unit</figcaption></figure>
+<p class="line">Meters other than 4/4: the metronome&#x27;s accent, the count-in and the tape&#x27;s bar lines, grid and jumps follow the meter.</p>
+<p class="links"><a href="https://github.com/hooligan333/open-field-meter">Repository, guide and source</a><a href="https://github.com/hooligan333/open-field-meter/raw/main/meter.pack">The pack file</a></p>
+</article>
+<article class="pack" id="pattern-mode">
+<header><h2>pattern mode</h2><p class="meta">sequencer &middot; version 1</p></header>
+<p class="line">The pattern sequencer keeps its play mode (backward, ping-pong or forward) over a restart.</p>
+<p class="links"><a href="https://github.com/hooligan333/open-field-pattern-mode">Repository, guide and source</a><a href="https://github.com/hooligan333/open-field-pattern-mode/raw/main/pattern%20mode.pack">The pack file</a></p>
+</article>
+</main>
+<div class="foot">
+<p>The recordings were played over MIDI by a script and recorded from the unit's own USB audio; only the level was changed. The pictures are photos of the unit's screen.</p>
+<p>Unofficial; not made, endorsed or supported by Teenage Engineering. MIT licence. <a href="https://github.com/hooligan333/open-field-packs">This page's repository</a>.</p>
+</div>
+</body>
+</html>
